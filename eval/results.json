@@ -1,0 +1,217 @@
+{
+  "categorization_offline": {
+    "n": 12766,
+    "accuracy": 0.9172019426601912,
+    "macro_f1": 0.9689924940695475,
+    "per_class": {
+      "Income": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 291
+      },
+      "Rent": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 240
+      },
+      "Groceries": {
+        "precision": 1.0,
+        "recall": 0.9296448087431693,
+        "f1": 0.9635398230088494,
+        "support": 1464
+      },
+      "Food Delivery": {
+        "precision": 1.0,
+        "recall": 0.8808490110950313,
+        "f1": 0.9366504231854321,
+        "support": 2073
+      },
+      "Dining": {
+        "precision": 1.0,
+        "recall": 0.8758974358974358,
+        "f1": 0.9338436303991252,
+        "support": 975
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 0.874561403508772,
+        "f1": 0.933083762283575,
+        "support": 3420
+      },
+      "Subscriptions": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1920
+      },
+      "Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 720
+      },
+      "Shopping": {
+        "precision": 1.0,
+        "recall": 0.8923267326732673,
+        "f1": 0.9431000654022237,
+        "support": 808
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 0.8639455782312925,
+        "f1": 0.927007299270073,
+        "support": 441
+      },
+      "Health": {
+        "precision": 1.0,
+        "recall": 0.9224806201550387,
+        "f1": 0.9596774193548387,
+        "support": 129
+      },
+      "Travel": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 45
+      },
+      "Savings": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 240
+      }
+    },
+    "by_method": {
+      "fallback": {
+        "share": 0.08279805733980887,
+        "accuracy": 0.0
+      },
+      "recurrence": {
+        "share": 0.03759987466708444,
+        "accuracy": 1.0
+      },
+      "rule": {
+        "share": 0.8796020679931067,
+        "accuracy": 1.0
+      }
+    },
+    "top_errors": {
+      "Transport -> Other": 429,
+      "Food Delivery -> Other": 247,
+      "Dining -> Other": 121,
+      "Groceries -> Other": 103,
+      "Shopping -> Other": 87,
+      "Entertainment -> Other": 60,
+      "Health -> Other": 10
+    }
+  },
+  "categorization_llm": null,
+  "anomalies": {
+    "category_spike": {
+      "tp": 16,
+      "fp": 12,
+      "fn": 4,
+      "precision": 0.5714285714285714,
+      "recall": 0.8
+    },
+    "duplicate_charge": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "hidden_subscription_caught": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "subscription_overlap": {
+      "tp": 40,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "subscription_price_hike": {
+      "tp": 20,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "txn_outlier": {
+      "tp": 40,
+      "fp": 5,
+      "fn": 0,
+      "precision": 0.8888888888888888,
+      "recall": 1.0
+    }
+  },
+  "forecast": {
+    "total_expense_mape_model": 14.89,
+    "total_expense_mape_naive_last": 18.47,
+    "total_expense_mape_mean3": 16.06,
+    "income_mape": 2.82,
+    "interval_80_coverage": 87.5,
+    "per_category_mape_model": {
+      "Dining": 130.8,
+      "Entertainment": 59.6,
+      "Food Delivery": 52.2,
+      "Groceries": 56.4,
+      "Health": 70.0,
+      "Other": 161.0,
+      "Rent": 0.0,
+      "Shopping": 138.2,
+      "Subscriptions": 0.5,
+      "Transport": 30.1,
+      "Travel": 82.4,
+      "Utilities": 9.4
+    },
+    "per_category_mape_naive": {
+      "Dining": 154.8,
+      "Entertainment": 87.4,
+      "Food Delivery": 60.9,
+      "Groceries": 68.3,
+      "Health": 97.9,
+      "Other": 168.8,
+      "Rent": 0.0,
+      "Shopping": 166.7,
+      "Subscriptions": 0.5,
+      "Transport": 37.3,
+      "Travel": 98.0,
+      "Utilities": 6.7
+    }
+  },
+  "spike_sensitivity": {
+    "0.0": {
+      "precision": 0.47619047619047616,
+      "recall": 1.0,
+      "f1": 0.6451612903225806
+    },
+    "1.0": {
+      "precision": 0.5757575757575758,
+      "recall": 0.95,
+      "f1": 0.7169811320754716
+    },
+    "1.5": {
+      "precision": 0.5714285714285714,
+      "recall": 0.8,
+      "f1": 0.6666666666666666
+    },
+    "2.0": {
+      "precision": 0.6086956521739131,
+      "recall": 0.7,
+      "f1": 0.6511627906976744
+    },
+    "2.5": {
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "f1": 0.5714285714285715
+    }
+  }
+}
